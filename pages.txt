@@ -1,0 +1,10 @@
+pages
+Category: Indie Rock Bands
+Post: The Strokes, The Postal, Service, Rilo Kiley, Interpol, Cat Power, The Pixies, The Libertines, The Shins, Modest Mouse, Bright Eyes, The Killers 
+
+A Post belongs to a Category and a Category has many Posts.
+
+A page that lists all the categories
+A page that lists all the postings in a given category
+A page that lets someone create a new posting in a given category
+A page that lets someone who has created a page return to edit/update the page
