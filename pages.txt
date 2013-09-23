@@ -1,10 +1,26 @@
 pages
-Category: Indie Rock Bands
-Post: The Strokes, The Postal, Service, Rilo Kiley, Interpol, Cat Power, The Pixies, The Libertines, The Shins, Modest Mouse, Bright Eyes, The Killers 
+Category: (VIEW ALL POSTS)
+	-Music Genre
+		- Indie Rock Bands
+
+Post: (TITLE, DESCRIPTION, PRICE, EMAIL) 
+ - The Strokes, The Postal, Service, Rilo Kiley, Interpol, Cat Power, The Pixies, The Libertines, The Shins, Modest Mouse, Bright Eyes, The Killers 
 
 A Post belongs to a Category and a Category has many Posts.
 
+MVP:
 A page that lists all the categories
 A page that lists all the postings in a given category
 A page that lets someone create a new posting in a given category
 A page that lets someone who has created a page return to edit/update the page
+
+Make sure the core features work. We should be able to download your app, run it, and do the follow:
+
+Choose a category to browse
+View all postings in a particular category
+View a particular posting
+Create my own posting
+Edit my postings by using the "secret key" that I get after creating my posting
+
+Add One Final Feature
+One last feature to add: the "this is awesome" feature. What does awesome mean? It can mean anything. The code is awesome, there are new awesome features, the design is awesome.
