@@ -15,7 +15,7 @@ get '/post/:id' do
 	erb :"posts/view"
 end
 
-post '/post/new' do
-	@title = params[:title]
+# post '/post/new' do
+# 	@title = params[:title]
 
-end
+# end
