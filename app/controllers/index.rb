@@ -4,6 +4,17 @@ def app
 	Sinatra::Application
 end
 get '/' do
-  # Look in app/views/index.erb
+  @posts = Post.order("created_at DESC")
   erb :index
+end
+
+get '/post/:id' do
+	@post = Post.find(params[:id])
+	@title = @post.title
+	erb :"posts/view"
+end
+
+post '/post/new' do
+	@title = params[:title]
+
 end
