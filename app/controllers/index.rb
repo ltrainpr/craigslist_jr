@@ -5,6 +5,7 @@ def app
 end
 get '/' do
   @posts = Post.order("created_at DESC")
+  @title = "Welcome to Active Record Jr. by Lionel"
   erb :index
 end
 

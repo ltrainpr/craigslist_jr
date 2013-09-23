@@ -3,7 +3,7 @@ Category: (VIEW ALL POSTS)
 	-Music Genre
 		- Indie Rock Bands
 
-Post: (TITLE, DESCRIPTION, PRICE, EMAIL) 
+Post: (TITLE, DESCRIPTION/BODY, PRICE, EMAIL) 
  - The Strokes, The Postal, Service, Rilo Kiley, Interpol, Cat Power, The Pixies, The Libertines, The Shins, Modest Mouse, Bright Eyes, The Killers 
 
 A Post belongs to a Category and a Category has many Posts.
