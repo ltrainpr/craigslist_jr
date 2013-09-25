@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>Welcome to Sinatra!</h1>
+  <p>Hello, world!</p>
+
+  <ul>
+    <% @categories.each do |x| %>
+      <li>
+        <h4><a href="/category/<%= x.id %>"><%= x.name %></a></h4>
+        <p>Created: <%= x.created_at %></p>
+      </li>
+    <% end %>
+  </ul>
+</div>
