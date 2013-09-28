@@ -18,6 +18,10 @@ gem 'rake'
 
 gem 'shotgun'
 
+group :development do
+	gem 'tux'
+end
+
 group :test do
   gem 'faker'
   gem 'rspec'

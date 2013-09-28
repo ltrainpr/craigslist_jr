@@ -1,6 +1,10 @@
 get '/' do
-  @title = "Welcome to Active Record Jr. by Lionel"
-  @categories = Category.all#.order("created_at DESC")
+  if @title
+      "#{@title}"
+    else
+    	@title = "Welcome to Active Record Jr. by Lionel"
+    end
+  @categories = Category.order("created_at DESC")
   redirect "/new" if @categories.empty?
   erb :index
 end
@@ -12,15 +16,15 @@ end
 post '/new' do 
 	@category = Category.new(name: params[:title], description: params[:description])
 	if @category.save
-		redirect "categories/#{@category.id}"
+		redirect "category/#{@category.id}"
 	else
 		erb :new
 	end
 end
 
-get '/categories/:id' do
+get '/category/:id' do
 	@category = Category.find_by_id(params[:id])
-	erb :categories
+	erb :category
 end
 
 post '/post/new' do
