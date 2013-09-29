@@ -14,15 +14,16 @@ gem 'activesupport'
 gem 'activerecord'
 gem 'sinatra-activerecord'
 
-gem 'rake'
 
 gem 'shotgun'
 
 group :development do
+	gem 'rake'
 	gem 'tux'
 end
 
 group :test do
+	gem 'rake'
   gem 'faker'
   gem 'rspec'
 end
