@@ -18,20 +18,10 @@ post '/new' do
 	end
 end
 
-get '/category/:id' do
-	@category = Category.find_by_id(params[:id])
-	erb :category
-end
 
 get '/post/new' do
 	@title = "Create post"
 	erb :new_post
-end
-
-
-get '/post/:id' do
-	@post = Post.find_by_id(params[:id])
-	erb :post
 end
 
 
@@ -44,6 +34,19 @@ post '/post/new' do
 		erb :post
 	end
 end
+
+get '/category/:id' do
+	@category = Category.find_by_id(params[:id])
+	@post = @category.posts[0]
+
+	erb :category
+end
+
+get '/post/:id' do
+	@post = Post.find_by_id(params[:id])
+	erb :post
+end
+
 
 
 
