@@ -1,7 +1,7 @@
 <div class="container">
 	<h2>New Post</h2>
 	<h3>Title</h3>
-	<form action="/post/new" method="post">  
+	<form action="/category/<%= @category.id %>/post/new" method="post">  
 	  <input type="text" name="title"><br />
 	  <h3>Description:</h3>  
 	  <textarea name="description" cols="40" rows="5"></textarea>

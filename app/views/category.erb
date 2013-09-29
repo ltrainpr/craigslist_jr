@@ -5,6 +5,9 @@
 	  <%= @category.description if @category%>
 </div>
 <div class="container">
+	<a href="/category/<%=@category.id%>/post/new">Add New Post:</a>
 	<h3>Posts:</h3>
-	<%= @post.title %>
+		<% @post.each do |x| %>
+			<a href="/post/<%=x.id%>"><%= x.title %></a>
+		<% end %>
 </div>

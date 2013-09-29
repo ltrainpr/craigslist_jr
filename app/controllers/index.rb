@@ -19,26 +19,27 @@ post '/new' do
 end
 
 
-get '/post/new' do
-	@title = "Create post"
+get '/category/:category_id/post/new' do
+	@category = Category.find(params[:category_id])
 	erb :new_post
 end
 
 
-post '/post/new' do
-	@title = params[:title]
-	@post = Post.new(title: params[:title], description: params[:description], price: params[:price], email: params[:email])
+post '/category/:category_id/post/new' do
+	@post = Post.new(category_id: params[:category_id], title: params[:title], description: params[:description], price: params[:price], email: params[:email])
+	p '/'*200
+	p params
+
 	if @post.save
-		redirect "post/#{@post.id}"
+		redirect "/post/#{@post.id}"
 	else
-		erb :post
+		erb :new_post
 	end
 end
 
 get '/category/:id' do
 	@category = Category.find_by_id(params[:id])
-	@post = @category.posts[0]
-
+	@post = @category.posts
 	erb :category
 end
 
