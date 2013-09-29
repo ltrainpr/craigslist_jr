@@ -8,7 +8,6 @@ gem 'sinatra'
 gem 'sinatra-contrib'
 
 # Use Thin for our web server
-gem 'thin'
 
 gem 'activesupport'
 gem 'activerecord'
@@ -19,6 +18,7 @@ gem 'shotgun'
 
 group :development do
 	gem 'rake'
+	gem 'thin'
 	gem 'tux'
 end
 
